@@ -9,47 +9,40 @@
 
 ---
 
-## Course Tiers
+## Course Tiers (NEW STRUCTURE)
 
-### Tier 1: Intro (₪250, 1.5 hours)
-**Goal:** Students can use Claude Code for daily tasks
+### FREE Course - למתחילים לגמרי
+**Goal:** Non-technical users can install and start using Claude Code
+**Duration:** Self-paced (~2 hours total)
+**Price:** Free
 
-| Module | Duration | Content |
-|--------|----------|---------|
-| What is Claude Code | 20 min | Overview, installation, first run |
-| Basic Commands | 30 min | Chat, files, bash, navigation |
-| First Project | 40 min | Hands-on: build something useful |
+| Lesson | Topic | Description |
+|--------|-------|-------------|
+| 01 | מה זה טרמינל? | For people who never used command line |
+| 02 | התקנה צעד אחר צעד | Step-by-step with images |
+| 03 | מה זה Claude Code? | Comparison with ChatGPT |
+| 04 | צעדים ראשונים | Basic commands and questions |
+| 05 | קובץ CLAUDE.md | Introduction to project configuration |
+| 06 | מה זה Skills? | Basic understanding of skills |
+| 07 | פרויקט ראשון | Build a simple task manager |
 
-**Materials:** Slides, cheatsheet, exercise files
+**Materials:** Written lessons, exercises
 **Outcome:** Comfortable using Claude Code independently
 
-### Tier 2: Advanced (₪500, 3 hours)
-**Goal:** Students build production-ready tools
+### PAID Course - למי שכבר התחיל
+**Goal:** People who started using Claude Code and want to level up
+**Duration:** 3 hours
+**Price:** ₪XXX (TBD)
 
-| Module | Duration | Content |
-|--------|----------|---------|
-| Skills Deep Dive | 45 min | Create custom skills |
-| Subagents | 45 min | Parallel work, specialized agents |
-| Hooks & Automation | 30 min | Pre/post tool hooks |
-| MCP Servers | 30 min | External integrations |
-| Hands-on Project | 30 min | Build a custom agent |
+| Lesson | Topic | Description |
+|--------|-------|-------------|
+| 01 | CLAUDE.md מתקדם | Advanced project configuration |
+| 02 | צלילה לעולם ה-Skills | Understanding and using skills |
+| 03 | בניית Skill משלכם | Hands-on skill creation |
+| 04 | זרימות עבודה | Workflows and automation |
 
 **Materials:** Templates, reference code, WhatsApp support group
-**Outcome:** Can build custom agents and integrations
-
-### Tier 3: Business (₪1,500)
-**Goal:** Team-wide Claude Code adoption
-
-| Module | Duration | Content |
-|--------|----------|---------|
-| Team Workflows | 1 hour | Shared skills, permissions |
-| Security & Compliance | 45 min | API keys, data handling |
-| Cost Optimization | 30 min | Model selection, context management |
-| Deployment Patterns | 45 min | CI/CD, automation |
-
-**Participants:** Up to 5 people
-**Support:** Monthly office hours for 3 months
-**Outcome:** Production-ready Claude Code integration
+**Outcome:** Can build custom skills and workflows
 
 ---
 
@@ -61,6 +54,7 @@
 4. **Hebrew-first** - All explanations in Hebrew
 5. **Safe environment** - Sandboxed exercises, no production risk
 6. **Progressive complexity** - Build on previous lessons
+7. **Non-technical friendly** - Free course designed for people who don't know CMD
 
 ---
 
@@ -74,14 +68,34 @@ CLAUDE Course/
 │   ├── agents/            # Teaching assistants
 │   └── hooks/             # Automation
 ├── content/
-│   ├── intro/             # Tier 1 lessons
-│   ├── advanced/          # Tier 2 lessons
-│   └── business/          # Tier 3 lessons
+│   ├── free/              # FREE course lessons (7 lessons)
+│   ├── paid/              # PAID course lessons (4 lessons)
+│   └── archive/           # Old 3-tier structure (deprecated)
+├── dashboard/             # Course management dashboard
 ├── examples/              # Demo code
 ├── exercises/             # Student workspaces
 ├── templates/             # Quick-start files
 └── tools/                 # Course management scripts
 ```
+
+---
+
+## Content Status
+
+### FREE Course (7/7 complete)
+- [x] 01-what-is-terminal.md
+- [x] 02-installation.md
+- [x] 03-what-is-claude-code.md
+- [x] 04-first-steps.md
+- [x] 05-claude-md-intro.md
+- [x] 06-skills-intro.md
+- [x] 07-first-project.md
+
+### PAID Course (0/4 complete - outlines only)
+- [ ] 01-claude-md-advanced.md
+- [ ] 02-skills-deep-dive.md
+- [ ] 03-build-your-skill.md
+- [ ] 04-workflows.md
 
 ---
 
@@ -99,9 +113,9 @@ CLAUDE Course/
 
 | Agent | Role |
 |-------|------|
+| `training-coach` | Main training assistant |
 | `intro-coach` | Patient beginner guide |
 | `advanced-mentor` | Production patterns expert |
-| `business-strategist` | Enterprise deployment advisor |
 
 ---
 
@@ -124,8 +138,16 @@ Example: "שלום עולם" → "םלוע םולש"
 
 ---
 
+## Dashboard
+
+Access the course dashboard at: `dashboard/index.html`
+Run with: `python -m http.server 8888` from the project root
+
+---
+
 ## Links
 
+- **Dashboard:** `http://localhost:8888/`
 - **Cheatsheet:** `claude-code-cheatsheet.pdf`
 - **Skills Library:** `skills-pdfs/`
 - **GitHub:** (to be created)
