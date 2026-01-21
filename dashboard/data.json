@@ -1,0 +1,74 @@
+{
+  "project": {
+    "name": "Claude Code Course",
+    "github": "https://github.com/aigoodinlive/claude-code-course",
+    "created": "2026-01-21",
+    "lastUpdated": "2026-01-21"
+  },
+  "stats": {
+    "lessons": {
+      "intro": 4,
+      "advanced": 0,
+      "business": 0
+    },
+    "agents": 3,
+    "skills": 3
+  },
+  "tiers": [
+    {
+      "id": "intro",
+      "name": "מבוא",
+      "price": 250,
+      "duration": "1.5 שעות",
+      "lessons": [
+        { "id": 1, "title": "מה זה Claude Code?", "status": "done", "file": "lesson-1-what-is-claude-code.md" },
+        { "id": 2, "title": "פקודות בסיסיות", "status": "done", "file": "lesson-2-basic-commands.md" },
+        { "id": 3, "title": "הפרויקט הראשון", "status": "done", "file": "lesson-3-first-project.md" },
+        { "id": 4, "title": "טיפים מעשיים", "status": "done", "file": "practical-daily-tips.md" }
+      ]
+    },
+    {
+      "id": "advanced",
+      "name": "מתקדם",
+      "price": 500,
+      "duration": "3 שעות",
+      "lessons": [
+        { "id": 1, "title": "Skills לעומק", "status": "pending", "file": "lesson-1-skills.md" },
+        { "id": 2, "title": "Subagents", "status": "pending", "file": "lesson-2-subagents.md" },
+        { "id": 3, "title": "Hooks ואוטומציה", "status": "pending", "file": "lesson-3-hooks.md" },
+        { "id": 4, "title": "MCP Servers", "status": "pending", "file": "lesson-4-mcp.md" }
+      ]
+    },
+    {
+      "id": "business",
+      "name": "עסקי",
+      "price": 1500,
+      "duration": "מותאם אישית",
+      "lessons": [
+        { "id": 1, "title": "עבודת צוות", "status": "pending", "file": "lesson-1-team-workflows.md" },
+        { "id": 2, "title": "אבטחה ופרטיות", "status": "pending", "file": "lesson-2-security.md" },
+        { "id": 3, "title": "Deployment", "status": "pending", "file": "lesson-3-deployment.md" }
+      ]
+    }
+  ],
+  "agents": [
+    { "id": "training-coach", "name": "training-coach", "role": "מאמן ראשי", "status": "active" },
+    { "id": "intro-coach", "name": "intro-coach", "role": "מדריך למתחילים", "status": "active" },
+    { "id": "advanced-mentor", "name": "advanced-mentor", "role": "מנטור למתקדמים", "status": "active" }
+  ],
+  "skills": [
+    { "id": "generate-lesson", "name": "generate-lesson", "description": "יצירת שיעור" },
+    { "id": "create-exercise", "name": "create-exercise", "description": "יצירת תרגיל" },
+    { "id": "evaluate-progress", "name": "evaluate-progress", "description": "הערכת התקדמות" }
+  ],
+  "tasks": [
+    { "id": 1, "title": "כתיבת שיעורי Tier 2 (מתקדם)", "category": "content", "priority": "high", "completed": false },
+    { "id": 2, "title": "הוספת תרגילים לשיעור 3", "category": "content", "priority": "medium", "completed": false },
+    { "id": 3, "title": "יצירת סקריפט demo אוטומטי", "category": "skill", "priority": "medium", "completed": false },
+    { "id": 4, "title": "עיצוב לוגו לקורס", "category": "marketing", "priority": "low", "completed": false },
+    { "id": 5, "title": "הכנת דף נחיתה", "category": "marketing", "priority": "high", "completed": false },
+    { "id": 6, "title": "בדיקת כל הקישורים ב-PDFs", "category": "content", "priority": "low", "completed": false },
+    { "id": 7, "title": "הוספת business-strategist agent", "category": "agent", "priority": "medium", "completed": false },
+    { "id": 8, "title": "יצירת וידאו הדגמה", "category": "marketing", "priority": "high", "completed": false }
+  ]
+}
